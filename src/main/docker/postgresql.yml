@@ -1,0 +1,11 @@
+version: '2'
+services:
+    jhenftest-postgresql:
+        image: postgres:10.4
+        # volumes:
+        #     - ~/volumes/jhipster/jhEnfTest/postgresql/:/var/lib/postgresql/data/
+        environment:
+            - POSTGRES_USER=jhEnfTest
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
